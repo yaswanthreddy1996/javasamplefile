@@ -1,0 +1,5 @@
+using System.IO;
+
+string[] filePaths = Directory.GetFiles(@"c:\MyDir\");
+foreach (string filePath in filePaths)
+  File.Delete(filePath);
